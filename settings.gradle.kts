@@ -1,4 +1,4 @@
-rootProject.name = "create-performance-task"
+rootProject.name = "image-randomizer"
 include(
     "base-util"
 )

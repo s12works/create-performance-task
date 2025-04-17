@@ -21,12 +21,10 @@ allprojects {
     }
 }
 
-// uncomment once additional Gradle subprojects are introduced
-/**
- * tasks.dokkaHtmlMultiModule {
- *     outputDirectory.set(buildDir.resolve("documentation"))
- * }
- */
+tasks.dokkaHtmlMultiModule {
+    outputDirectory.set(buildDir.resolve("documentation"))
+}
+
 tasks.test {
     useJUnitPlatform()
 }

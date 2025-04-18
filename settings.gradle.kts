@@ -1,4 +1,5 @@
 rootProject.name = "image-randomizer"
 include(
-    "base-util"
+    "base-util",
+    "object-repr"
 )

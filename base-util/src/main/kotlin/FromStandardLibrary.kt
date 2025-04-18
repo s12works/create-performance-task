@@ -13,6 +13,7 @@ package com.s12works.imageRandomizer
 @Target(
     AnnotationTarget.CLASS,
     AnnotationTarget.FUNCTION,
+    AnnotationTarget.PROPERTY,
     AnnotationTarget.TYPEALIAS
 )
 public annotation class FromStandardLibrary(

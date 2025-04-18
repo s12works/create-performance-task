@@ -13,5 +13,6 @@ package com.s12works.imageRandomizer
 public enum class StandardLibraryUtility {
     ASSERTION_ENFORCER,
     OBJECT_REPR_REPRESENTOR,
-    OBJECT_REPR_TRANSLATOR
+    OBJECT_REPR_TRANSLATOR,
+    RANGE
 }

@@ -11,7 +11,10 @@ package com.s12works.imageRandomizer
  * @see [FromStandardLibrary] used for application
  */
 public enum class StandardLibraryUtility {
+    STANDARD_OBJECT_EQUALITY,
     ASSERTION_ENFORCER,
+    ASSERTION_REPORT,
+    ASSERTION_REPORTER,
     OBJECT_REPR_REPRESENTOR,
     OBJECT_REPR_TRANSLATOR
 }

@@ -7,7 +7,7 @@ import com.s12works.imageRandomizer.assertion.Report
 @FromStandardLibrary(StandardLibraryUtility.ASSERTION_ENFORCER)
 public fun warn(report: Report) =
     println(
-        "[${report.occurance.format(java.time.format.DateTimeFormatter.ofPattern("HH:mm:ss"))}] WARNING: ${report}"
+        "[${report.occurrence.format(java.time.format.DateTimeFormatter.ofPattern("HH:mm:ss"))}] WARNING: ${report}"
     )
 
 @FromStandardLibrary(StandardLibraryUtility.ASSERTION_ENFORCER)

@@ -4,5 +4,6 @@ include(
     "object-repr",
     "assertion",
     "range-util",
+    "graphics",
     "input"
 )

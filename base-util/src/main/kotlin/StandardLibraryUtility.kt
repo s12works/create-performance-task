@@ -14,5 +14,6 @@ public enum class StandardLibraryUtility {
     ASSERTION_ENFORCER,
     OBJECT_REPR_REPRESENTOR,
     OBJECT_REPR_TRANSLATOR,
+    COLOR_UTILITY,
     RANGE
 }

@@ -12,11 +12,15 @@ public fun <O: Any> getStandard(obj: O): Representation {
         member is KProperty<*>
     } as Collection<KProperty<*>>
 
+    kProperties.forEach {
+        println("GETTER: ${it.getter}")
+    }
+
     return Representation(
         obj::class.simpleName,
         com.s12works.imageRandomizer.getProcGeneratedCollection<KProperty<*>, Property<Any?>>(
             kProperties,
-            { Property<Any?>(it.name, it.call()) }
+            { Property<Any?>(it.name, it.getter.call()) }
         )
     )
 }

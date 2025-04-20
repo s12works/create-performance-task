@@ -28,3 +28,12 @@ tasks.dokkaHtmlMultiModule {
 tasks.test {
     useJUnitPlatform()
 }
+
+
+tasks.withType<Jar> {
+    manifest {
+        attributes(
+            mapOf("Main-Class" to "com.s12works.imageRandomizer.app.MainKt")
+        )
+    }
+}

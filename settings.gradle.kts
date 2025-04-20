@@ -5,5 +5,6 @@ include(
     "assertion",
     "range-util",
     "graphics",
-    "input"
+    "input",
+    "app"
 )

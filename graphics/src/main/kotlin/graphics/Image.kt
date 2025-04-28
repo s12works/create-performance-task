@@ -23,11 +23,11 @@ public class Image {
         val procPositions = mutableListOf<Position>()
         for (pixel in pixels) {
             assert(
-                getErrorMessage("pixel's position, ${pixel.position}, is outside of given resolution"),
+                getErrorMessage("pixel's position, ${pixel.position}, is outside of given resolution, ${resolution}"),
                 ::fail,
                 {
-                    pixel.position.xpos in Range(0, resolution.width) &&
-                    pixel.position.ypos in Range(0, resolution.length)
+                    pixel.position.xpos in Range(0, resolution.length) &&
+                    pixel.position.ypos in Range(0, resolution.width)
                 }
             )
 

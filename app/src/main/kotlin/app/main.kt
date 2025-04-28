@@ -49,7 +49,7 @@ public fun main() {
             ),
 
             UserInputREPLInstance(
-                "Input file output location:",
+                "Output file location:",
                 mapOf<Test, ErrorMessage>(
                     pngFileRequirement
                 )

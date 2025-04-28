@@ -27,6 +27,15 @@ tasks.withType<org.jetbrains.dokka.gradle.DokkaTaskPartial>().configureEach {
 
 application {
     mainClass = "com.s12works.imageRandomizer.app.MainKt"
+    applicationDefaultJvmArgs = listOf("-Xmx2g")  // permit extra memory allocation (2GB)
+}
+
+tasks.withType<Jar> {
+    manifest {
+        attributes(
+            mapOf("Main-Class" to "com.s12works.imageRandomizer.app.MainKt")
+        )
+    }
 }
 
 tasks.named<JavaExec>("run") {

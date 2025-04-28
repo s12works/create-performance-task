@@ -3,6 +3,8 @@ package com.s12works.imageRandomizer.graphics
 import com.s12works.imageRandomizer.assertion.enforcers.fail
 
 public fun getImageFromComp(composition: SimplifiedImageComp, colorGenerator: ColorGenerator): Image {
+    println("getting image from comp")
+
     val pixels = mutableListOf<Pixel<Color>>()
     var resolution = Resolution(0, 0)
 

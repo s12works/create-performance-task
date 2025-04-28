@@ -1,5 +1,9 @@
 package com.s12works.imageRandomizer
 
+@Deprecated(
+    "functionaility already prpovided via Kotlin standard library",
+    ReplaceWith("Collection.map {}")
+)
 public fun <E, T> getProcGeneratedCollection(
     iterable: Iterable<E>,
     translator: (E) -> T
